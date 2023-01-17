@@ -1,0 +1,332 @@
+‘≠≠≠Significance of testing 
+
+
+Type of testing -- 
+
+Manual VS automation
+
+Class 1 - Manual Testing
+		-- 
+
+bugs - tickets - issues - defects
+
+Where to test 
+		browser
+		mac / windows / linux
+		
+
+Login functionality -
+	 						valid login
+							invalid login
+							blank login
+
+
+Business/client explains the requirement
+PO/BA prepares the document - SRS software requirement specification.
+
+Application/software 
+ -- AUT - application under test
+ -- SUT - software under test
+	
+SRS - software requirement specification - covers the scope of application's functionality
+
+
+Test plan document - a guide to QA team, what to test etc.
+Test cases - splitting the user story into smaller parts - every part will be your test case
+
+
+one functionality from multiple functionalities of software/AUT is called user story
+User story -  login/ logout/ shopping/ prime video/ checkout
+
+user story - login - 
+Test cases -1.valid login
+			  steps - 
+					i.launch browser and application
+					ii. enter username and password
+					iii. click login button
+					iv. verify the homepage
+			2. invalid login
+			3. blank login
+
+
+3 types of application -
+
+Web - application hosted over the internet browser called website/web application
+Desktop - standalone application - MS word, calculator etc
+Mobile - 
+
+
+STLC - software testing life cycle
+
+requirement analysis - to analyze the feasibility of the requirement
+Test planning - test plan document is the output of it
+Test case development - output is test cases developed
+Environment setup - url uniform resource locator https://www.google.com/, dedicated devices, you need access
+Test execution - after executing the test cases manually, we collect the results - actual vs expected
+Test cycle closure -
+
+
+Test planning - it gives you the direction and instructions of testing
+Test case development - we write details of carrying out a testing - use user story and split it into smaller peices
+
+
+
+Class 2 -
+Recap - 
+     STLC - software testing lifecycle
+
+
+Test case development - 
+
+User story -
+Login functionality
+
+TC1 - valid login
+TC2 - invalid login
+TC3 - blank login - username blank pass filled, pass blank username filled
+
+
+why?
+
+Pre requisite/ pre condition
+
+before actually executing the test case, things need to be done
+for example - to perform login test, precondition is - open browser
+
+
+Developers are working - develop the application
+QA is working - test the application
+
+
+environment
+
+developers work in their environment
+Qa works in their environment
+
+Dev environment
+server where all the dev code is available where devloper works
+www.amazondev.com
+
+QA/Testing/Test
+server where qa team works and test the application, it is the replica of dev environment
+this is the place where functional testing is done
+www.amazontest.com
+
+but we have some other testing as well apart from functional
+end to end testing
+
+Staging environment - system testing is done
+www.amazonstage.com
+UAT - user acceptance testing
+
+
+production/go live/live
+www.amazon.com
+
+Dev
+QA/Test
+Staging
+Production
+
+
+
+BUG - unexpected functionality of the application
+
+bug/defect/issue/ticket/error
+
+
+
+Class 3 -
+Recap - environment setup 
+
+dev server - only developer works
+QA/Test env/server - QA team works - it is replica of dev, here we perform functional testing
+Staging server/env - where we perform system testing and UAT testing
+Production server/env - go live for customers
+
+
+whenever we find a bug
+	- reproduce the bug atleast 3 times
+	- read the requirement again to make sure the bug you found is actually a bug
+	- report the bug - 
+		how do you report it?
+		provide exact steps we took to reproduce the bug
+		browser, time, environment, test data, screenshot or screen recording
+
+
+status of the bug
+open - when QA assign the bug to dev first time
+fixed - when dev fix it and assign it back to the QA
+closed - when QA test it again and satisfied with it
+Re-opened - when QA test it again and not satisfied with it
+Duplicate - when other QA member has already raised the bug
+Deferred -  Dev accept it is a bug, but will decide to fix it later
+
+Priority and Severity -
+
+priority categories -
+show stopper
+major 
+minor
+cosmetics
+
+High priority - High severity - login functionality of the application
+High priority - Low severity - misspelled bank name on the home page
+High Severity & Low Priority - When bug can wait for sometime to fix it
+Low Priority and Low Severity - cosmetic bug 
+
+
+BDD behavioral-driven development - 
+it allows us to write the test cases/scenarios in plain english text - gherkin language
+
+Gherkin tags -
+
+Given - precondition
+When - Performing actions
+Then - Expected results
+And - supporting tag (Can be used with given, when, then)
+But - to exclude something (we don't use)
+
+Given user is able to open chrome browser
+When user enters username and password
+And user clicks on login button
+Then user should be able to logged in
+
+Cucumber scenarios -
+it is written in a syntax/language/formula called gherkin. it is plain english text
+
+BDD is used to define business requirements
+and it encourages to write scenarios from user point of view
+
+Scenario - 
+Given user is able to open the amazon.com application
+When user clicks on sign in button
+And user enters email id
+And user clicks on continue button
+And user enters password
+Then user should navigate to homepage
+
+Acceptance criteria -
+As an amazon user, user should be able to logged in
+
+
+THE MAIN GOAL OF WRITING BDD SCENARIOS IS TO MAKE THE SCENARIO SENSE
+
+
+
+HOMEWORK -
+Write 5 cucumber - BDD scenarios along with acceptance criteria of your choice and submit them by Saturday
+
+Given user is able to open the HRMS application
+When user enters username
+And user enters password
+And user clicks on login button
+Then user should navigate to homepage
+When user clicks on PIM option
+And user clicks on add employee option
+And user enters firstname and lastname
+And user clicks on save button
+Then employee added successfully
+
+Acceptance criteria - user should be able to add employee
+
+Types of testing -	
+
+functional testing - 
+non-functional testing - 
+
+in QA/Test environment, functional testing
+
+
+unit testing - it is done by the developer, we also call it component testing
+integration testing - it is done by QA team
+system testing / UAT testing -  system testing is done in staging environment and business user comes to test application in it
+to perform UAT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+							
+
+
